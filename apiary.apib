@@ -7,6 +7,7 @@ HOST: http://pools.apiblueprint.org/
 
 ###### 
 ## 首页接口 [/index]
+##### product 节点就是想要有熨烫和收纳的 product_id
 
 ### app 首页[POST]
 ###### 有时间可优化此列表 将过去的2个banner和建议接口合并为一个接口，较少请求数
@@ -29,7 +30,8 @@ HOST: http://pools.apiblueprint.org/
                     }]
                     
                     product:
-                    [ { product_id:"1" , name : "收纳" }，
+                    [ 
+                      { product_id:"1" , name : "收纳" }，
                       { product_id:"2" , name : "熨烫" }
                     ]
                 },
