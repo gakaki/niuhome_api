@@ -79,19 +79,29 @@ HOST: http://pools.apiblueprint.org/
 单行显示 图片，收纳工具名称（价格），收纳工具描述做什么的，
 收纳工具列表，根据上传时间降序排序 索性服务器端排个时间倒序吧
 
-#### 返回 code 108是成功的接口
-#### id   收纳工具id 1
-#### image 暂时app内置图片 以后有机会改成网络获取
+####  order_type 收纳里对应的订单类型应该是多少
+####  product_id 收纳里对应的产品id应该是多少
+####  service_type 收纳里对应的服务类型id应该是多少
+####  source 1:pc     2:android   3 :ios
+####    tool 收纳这里应该传工具id了吧
+####  work_times 11:30 工作开始时间
+ 
 + Request (application/json)
 
         {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
+            "address_id": "6391",
+            "coupon_id":  "",
+            "date": "2015-09-02",
+            "order_type": "2",
+            "product_id": "12",
+            "remarks": "我想指定女保洁师；年轻手脚麻利的；请重点打扫卧室；",
+            "service_type": "1",
+            "source":      "3",
+            "token": "0a97c6d04ec8c93f4287d4796ea5dc80",
+            "tool": "6391",
+            "uid": "100746",
+            "versionCode": "1",
+            "work_times": "11:30"
         }
 + Response 201 (application/json)
     
