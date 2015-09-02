@@ -44,7 +44,7 @@ HOST: http://niuhome.apiblueprint.org/
 ### 收纳工具列表 [POST]
 
 单行显示 图片，收纳工具名称（价格），收纳工具描述做什么的，
-
+返回 code 108是成功的接口
 <!--+ Request (application/json)-->
 
 <!--        {-->
@@ -62,21 +62,20 @@ HOST: http://niuhome.apiblueprint.org/
     + Body
 
             {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
+                "code": "108",
+                "list": [
                     {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
-                    }
+                        "id": "收纳工具id 1",
+                        "image": "暂时可以留空也许以后使用网络地址获取图片",
+                        "price": "5",
+                        "desc": "收纳200个袜神器只要5元"
+                    },  
+                    {
+                        "id": "收纳工具id 2",
+                        "image": "暂时app内置图片 以后有机会改成网络获取",
+                        "price": "10",
+                        "desc": "西装收纳套"
+                    }, 
                 ]
             }
+            
