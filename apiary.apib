@@ -46,18 +46,9 @@ HOST: http://pools.apiblueprint.org/
 单行显示 图片，收纳工具名称（价格），收纳工具描述做什么的，
 收纳工具列表，根据上传时间降序排序 索性服务器端排个时间倒序吧
 
-返回 code 108是成功的接口
-<!--+ Request (application/json)-->
-
-<!--        {-->
-<!--            "question": "Favourite programming language?",-->
-<!--            "choices": [-->
-<!--                "Swift",-->
-<!--                "Python",-->
-<!--                "Objective-C",-->
-<!--                "Ruby"-->
-<!--            ]-->
-<!--        }-->
+#### 返回 code 108是成功的接口
+#### id   收纳工具id 1
+#### image 暂时app内置图片 以后有机会改成网络获取
 
 + Response 201 (application/json)
 
@@ -67,14 +58,14 @@ HOST: http://pools.apiblueprint.org/
                 "code": "108",
                 "list": [
                     {
-                        "id": "收纳工具id 1",
-                        "image": "暂时可以留空也许以后使用网络地址获取图片",
+                        "id": "1",
+                        "image": "",
                         "price": "5",
                         "desc": "收纳200个袜神器只要5元"
                     },  
                     {
-                        "id": "收纳工具id 2",
-                        "image": "暂时app内置图片 以后有机会改成网络获取",
+                        "id": "2",
+                        "image": "",
                         "price": "10",
                         "desc": "西装收纳套"
                     }, 
