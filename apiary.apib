@@ -82,7 +82,17 @@ HOST: http://pools.apiblueprint.org/
 #### 返回 code 108是成功的接口
 #### id   收纳工具id 1
 #### image 暂时app内置图片 以后有机会改成网络获取
++ Request (application/json)
 
+        {
+            "question": "Favourite programming language?",
+            "choices": [
+                "Swift",
+                "Python",
+                "Objective-C",
+                "Ruby"
+            ]
+        }
 + Response 201 (application/json)
     
     + Body
