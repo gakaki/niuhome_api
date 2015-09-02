@@ -13,17 +13,26 @@ HOST: http://pools.apiblueprint.org/
 + Response 200 (application/json)
 
             {
-                "result": [{
-                    "bannerImageUrl": "http://www.niuhome.com/uploads/app/ad/2015-08/20150828190024.jpg",
-                    "bannerAction": "jumpUrl",
-                    "bannerName": "最新活动",
-                    "bannerTargetUrl": "http://mp.weixin.qq.com/s?__biz=MzA3NjYzMjYzMg==&mid=212337763&idx=1&sn=59ba8a25ac3aa4374c6507cb21effd0f&scene=0#rd"
-                }, {
-                    "bannerImageUrl": "http://www.niuhome.com/uploads/app/ad/2015/20150414175509.jpg",
-                    "bannerAction": "show",
-                    "bannerName": "最新活动",
-                    "bannerTargetUrl": null
-                }],
+                "result": {
+                
+                    banner:
+                    [{
+                        "bannerImageUrl": "http://www.niuhome.com/uploads/app/ad/2015-08/20150828190024.jpg",
+                        "bannerAction": "jumpUrl",
+                        "bannerName": "最新活动",
+                        "bannerTargetUrl": "http://mp.weixin.qq.com/s?__biz=MzA3NjYzMjYzMg==&mid=212337763&idx=1&sn=59ba8a25ac3aa4374c6507cb21effd0f&scene=0#rd"
+                    }, {
+                        "bannerImageUrl": "http://www.niuhome.com/uploads/app/ad/2015/20150414175509.jpg",
+                        "bannerAction": "show",
+                        "bannerName": "最新活动",
+                        "bannerTargetUrl": null
+                    }]
+                    
+                    product:
+                    [ { product_id:"1" , name : "收纳" }，
+                      { product_id:"2" , name : "熨烫" }
+                    ]
+                },
                 "resultCode": "0000",
                 "errorInfo": ""
             }
